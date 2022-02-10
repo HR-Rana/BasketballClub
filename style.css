@@ -1,0 +1,890 @@
+
+
+@font-face{
+	font-family: 'Montserrat';
+	src: url(Fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face{
+	font-family: 'Trade Gothic';
+	src: url(Fonts/Trade Gothic/Trade Gothic LT Bold Condensed No. 20.ttf);
+}
+
+
+@font-face{
+	font-family: 'Quincy';
+	src: url(Fonts/Quincy/QuincyCF-BlackItalic.woff - Shortcut);
+}
+
+
+
+:root{
+    --primary:#f15a25;
+    --secondary: rgb(2, 84, 236);
+    --white: white;
+    --bg-color: rgb(241, 241, 241);
+}
+
+
+
+h1{
+    font-family: 'Trade Gothic';
+}
+h2{
+    font-family: 'Quincy';
+}
+h2 span{
+    font-family: 'Trade Gothic';
+}h3 span{
+    font-family: 'Quincy';
+    font-weight: 600;
+}
+h3{
+    font-family: 'Trade Gothic';
+}
+h4{
+    font-family: 'Trade Gothic';
+}
+h5{
+    font-family: 'Quincy';
+}
+
+
+
+
+.menu-area{
+    width: 100%;
+}
+.menu-area .menu{
+    width:100%;
+    margin: 25px auto;
+    font-weight: 700;
+}
+.menu-area .menu ul{
+    width: 80%;
+    justify-content: space-between;
+
+}
+.menu-area .menu ul li{
+    position: relative;
+    padding: 13px 0;
+
+}
+.menu-area .menu ul li a::after{
+    content: "";
+    width: 00%;
+    height: 3px;
+    background:linear-gradient(to right, rgb(2, 84, 236)30%, #f15a25);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
+.menu-area .menu ul li:hover a::after{
+    width: 100%;
+}
+.menu-area .menu ul li a{
+    text-decoration: none;
+    color: var(--primary);
+    
+}
+.menu-area .menu ul li a:hover{
+    color: var(--secondary);
+}
+
+
+.account-area{
+    justify-content: center;
+    justify-content: space-between;
+}
+.account-area span{
+    width: 50%;
+   padding-top: 30px;
+}
+.account-area span i{
+    width: 40px;
+    font-size: 28px;
+    color: var(--primary);
+}
+.account-area span i:hover{
+    cursor: pointer;
+}
+.account-area span p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.login-area{
+     width: 100%;
+     height: 100vh; 
+     background-color: var(--white);
+    padding: 70px 0;
+    position: fixed;
+    z-index: 9999999999999999999;
+    margin-top: -110px;
+    display: none;
+}
+.login-area .login-areaimg{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+.log-area .login-areaimg img{
+    display:none;
+}
+.log-area{
+    position: relative;
+}
+.login-area .login-logo{
+    width: 250px;
+    height: 200px; 
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    display: inline-block;
+}
+.login-area .login-logo img{
+    width: 100%;
+   text-align: center;
+}
+.login-area .d-flex{
+    margin-top:20px;
+}
+.login-area form{
+    width: 100%;
+    margin:  0 auto;
+    background-color: rgb(147, 241, 210);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.login-area .form-area{
+    width: 100%;
+}
+.login-area form .fill input{
+    width: 80%;
+   display: block;
+   margin: 10px auto;
+   position: relative;
+}
+.login-area form .fill span{
+    display: flex;
+    position: relative;
+}
+.login-area form input{
+    position: relative;
+    padding: 2px 5px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+.login-area form .fill span i{
+   position: absolute;
+   top: 17px;
+   right: 70px;
+}
+.login-area .login-text{
+    text-align: center;
+    color: var(--primary);
+    margin-top: 0px;
+}
+.login-area .login-text h4{
+    font-weight: 700;
+    font-size: 35px;
+}
+.login-area .login-text p{
+    font-weight: 600;
+    
+
+}
+.login-area .form-area{
+    margin-top: 70px;
+}
+.login-vector{
+    width: 100%;
+    overflow: hidden;
+}
+.login-vector img{
+    width: 75%;
+  float: right;
+  overflow: hidden;
+}
+
+.login-buttonarea{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+.login-submit{
+    width: 50%;
+    margin: 0 auto;
+}
+.login-submit input{
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: var(--primary);
+    color: white;
+}
+.forgot span{
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 0px 15px;
+    padding: 25px 0;
+}
+.login-buttonarea p{
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+.section2{
+    background:linear-gradient(140deg,#f15a25 60%, transparent 40% );
+    height: 90vh;
+    position: relative;
+}
+.banner-area h1{}
+.banner-area h1 span{
+    color: var(--secondary);
+    font-weight: 700;
+    text-shadow: 0px 2px white;
+    font-size: 65px;
+}
+.banner-left{
+    width: 50%;
+    padding: 50px;
+    color: var(--white);
+}
+.left-box{
+    width: 100%;
+    margin: 100px 0;
+}
+.left-box p{
+    margin: 15px 0;
+}
+.banner-area .button button{
+    background-color:var(--secondary);
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.banner-area .button button:hover{
+    background-color:var(--primary);
+}
+.banner-area{
+    position: relative;
+}
+.flying-ball img{
+    position: absolute;
+    right:250px;
+    top: 10px;
+    width: 120px;
+    height: 90px;
+    /* transform: rotate(00deg);
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+    -o-transform: rotate(200deg); */
+    animation-name: profile;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.banner-right{
+    width: 50%;
+}
+.banner-area{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bRight-img{
+    width: 100%;
+    height: auto;
+    text-align:right;
+}
+.bRight-img img{
+    width: 100%;
+    height:100%;
+    margin-left: 70px;
+}
+
+
+
+.section3{
+    padding: 70px 0;
+    background-image: url(images/Basketball_Players_playing_basketball_game_generate5d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.section3 h2{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 50px;
+}.section3 h2 span{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 35px;
+}
+.section3 .common:hover{
+    box-shadow: 0px 0px 10px black;
+    background-color: var(--white);
+}
+.section3 .common{
+    background-color: rgba(230, 230, 230, 0.856);
+    padding:5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    margin: 20px 0;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
+.section3 .common img{
+   width: 100%;
+    height:250px;
+}
+.section3 .common .those-text{
+    padding: 15px 10px;
+}
+.section3 .common .those-text h5{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--primary);
+}
+.section3 .common .those-text p{
+    margin-top: 15px;
+}
+.section3 .common .join{
+    text-align: center;
+}
+.section3 .common button{
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+    margin: 15px auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.About-basketball{
+    background-image: url(imges/courtfield.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:30px;
+}
+.About-basketball button{
+    width: 30%;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+    margin: 15px auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+
+.section4{
+    padding: 50px 0;
+    background-color: var(--bg-color);
+    position: relative;
+    z-index: 99999;
+}
+.section4::after{
+    content: "";
+    width: 100%;
+    height: 300px;
+    background-color: var(--white);
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    z-index: -22;
+}
+.section4 h2{
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary);
+}
+.section4 .left-content{
+    padding: 50px 0;
+    margin: 100px 0;
+    text-align: center;
+    z-index: 9999999;
+}
+.section4 .left-content .name{
+    margin: 25px 0;
+}
+.left-content .name p{
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.section4 .left-content h4{
+    font-size: 32px;
+    font-weight: 600;
+}
+.section4 .left-content h4 span{
+    color: blue;
+    font-weight: 600;
+}
+
+
+.right-content{
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+}
+.right-content img{
+    width: 75%;
+    height: 500px;
+    float: right;
+    overflow: hidden;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+     ox-shadow: 0px 0px 5px black;
+     border: 20px solid var(--white);
+}
+
+
+
+.section5{
+    background:linear-gradient(to left, rgba(0,0,0, .8)60%,rgba(0,0,0, .4)), url(images/bryan-reyes-nCdixE4l7O8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 60vh;
+    background-attachment: fixed;
+}
+.section5 .About-basketball{
+    color: var(--white);
+}
+.section5 .About-basketball .text{
+    width: 70%;
+    margin: 70px auto;
+    text-align: center;
+}
+.About-basketball .text{}
+.About-basketball .text h2{}
+.About-basketball .text p{
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.news-area{
+    background-color:var(--bg-color);
+    padding: 50px 0;
+}
+.news-area .news:hover{
+    background-color: var(--white);
+}
+.news-area .news{
+    margin: 12px 0;
+    box-shadow: 0px 0px 7px black;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.news-area .news-img{
+    overflow: hidden;
+    height: 200px;
+    border: 2px solid var(--primary);
+}
+.news-area .news img{
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
+.news-area .news img:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.news-text{
+    padding: 15px 10px;
+}
+.news-text p{
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 05px;
+    text-align: justify;
+}
+.news-text h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.news-text span{}
+.news-text span a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.section-11{
+	background-color: rgb(240, 240, 240);
+	padding: 50px 20px;
+}
+
+.section-11 h2{
+	text-align: center;
+	margin: 15px 0;
+    padding-top: 30px;
+    color: var(--primary);
+}
+
+
+
+.owl-carousel{
+    padding: 10px 0
+}
+.section-11 .item{
+   
+}
+
+.comment{
+    background-color: ;
+    text-align: center;
+    position: relative;
+    padding: 20px 20px;
+    box-shadow: 0;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.comment-top span{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 15px 0;
+    color: var(--secondary);
+}
+.comment .profile{
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	text-align: center;
+	left: 38%;
+	z-index: 999999999;
+
+}
+.comment .profile img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 3px solid var(--primary);
+	padding: 5px;
+}
+
+.comment-footer{
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.comment-footer .social-icon{
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.comment-footer .icon{
+	font-size: 20px;
+	transition: .5s;
+    color: var(--primary);
+}
+.icon i:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+
+
+
+.more-clients{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+.more-img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+.more-img img{
+    width: 50px;
+    height: 50px;
+    margin-left: -15px;
+    padding: 3px;
+    box-shadow: 0px 2px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid var(--secondary);
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    animation-name: profile;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.more-img2 img{
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+   border: 1px solid var(--secondary);
+   position: absolute; top: 20px;
+   left: 50px;
+   top: 20px;
+
+   animation-name: profile;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+
+}
+.more-img3 img{
+    animation-name: profile;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+.more-img2 img{
+    margin-left: -45px;
+}
+.more-img3{
+    margin-left: -45px;
+}
+
+.more-comment{
+    margin:30px;
+
+}
+.more-comment p{
+    margin-left: 15px;
+    color: var(--primary);
+    font-weight: 600;
+}
+.more-comment p span{
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--secondary);
+}
+
+@keyframes profile {
+    0%{
+        transform: translateY(1.5px);
+        -webkit-transform: translateY(1.5px);
+        -moz-transform: translateY(1.5px);
+        -ms-transform: translateY(1.5px);
+        -o-transform: translateY(1.5px);
+} 
+    50%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }  
+    100%{
+        transform: translateY(1.5px);
+        -webkit-transform: translateY(1.5px);
+        -moz-transform: translateY(1.5px);
+        -ms-transform: translateY(1.5px);
+        -o-transform: translateY(1.5px);
+} 
+  
+}
+
+
+
+
+
+
+/* ///////////////    Faq area             ///////////// */
+
+
+.faq{
+    width: 55%;
+    margin:  0 auto;
+    padding: 50px 0;
+}
+.faq h3{
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 50px;
+    font-weight: 600;
+}
+.faq h3 span{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 40px;
+}
+.question-anser{}
+.question{
+    border: 2px solid rgb(207, 207, 207);
+    padding: 10px;
+    display: flex;
+    margin: 12px 0;
+    box-shadow: 0px 0px 2px black;
+}
+.question h4{
+    width: 70%;
+    overflow: hidden;
+    padding: 5px 0;
+}
+.answer p{
+    display: none;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.question{
+    overflow: hidden;
+}
+.question span{
+    width: 70px;
+    float: right;
+    overflow: hidden;
+    display: none;
+}
+
+.question{
+    position: relative;
+}
+.question .faq-icon{
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+}
+.question{
+    position: relative;
+}
+.faq-icon p i{
+    width: 50px;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+}
+
+.faq-icon .hide{
+    display: none;
+}
